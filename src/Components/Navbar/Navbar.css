@@ -29,6 +29,7 @@
   align-items: center;
   justify-content: center;
   gap: 3px;
+  color: #626262;
   cursor: pointer;
 }
 .nav-menu li hr {
@@ -37,6 +38,9 @@
   height: 3px;
   border-radius: 10px;
   background-color: red;
+}
+li a {
+  color: #626262;
 }
 .nav-login-cart {
   display: flex;
