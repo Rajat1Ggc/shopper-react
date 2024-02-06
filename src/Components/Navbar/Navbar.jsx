@@ -33,7 +33,7 @@ function Navbar() {
           {menu === 'women' ? <hr /> : <></>}
         </li>
         <li onClick={() => setMenu('kids')}>
-          <Link to="/kid">kids </Link>
+          <Link to="/child">kids </Link>
           {menu === 'kids' ? <hr /> : <></>}
         </li>
       </ul>
