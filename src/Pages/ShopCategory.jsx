@@ -3,11 +3,12 @@ import './CSS/ShopCategory.css';
 import { shopContext } from '../Context/ShopContext';
 import dropdown_icon from '../Components/Assets/UserAssets/dropdown_icon.png';
 import Item from '../Components/item/Item';
+
 function ShopCategory(props) {
   const { all_product } = useContext(shopContext);
   return (
     <div className="shop-category">
-      <img src={props.banner} alt="" />
+      <img className="shop-category-banner" src={props.banner} alt="" />
       <div className="shopCategory-indexShot">
         <p>
           <span>showing 1 - 12</span>out of 36 products
@@ -35,6 +36,8 @@ function ShopCategory(props) {
           }
         })}
       </div>
+
+      <div className="shopCategory-loadmore">Explore more</div>
     </div>
   );
 }
